@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 10,
   },
+  buttonContainer: {
+    position: "absolute",
+    bottom: 50,
+    width: "100%",
+  },
   button: {
     height: 40,
     borderRadius: 20,
@@ -38,6 +43,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "500",
     textTransform: "uppercase",
+  },
+  listContainer: {
+    width: "100%",
   },
 });
 
