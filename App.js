@@ -8,6 +8,7 @@ export default function App() {
         <View style={styles.titles}>
           <Text style={styles.title}>Model S</Text>
           <Text style={styles.subtitle}>Starting at 69,420$</Text>
+          <Text>Hi</Text>
         </View>
       </View>
       <StatusBar style="auto" />
