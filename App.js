@@ -7,8 +7,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <CarContainer />
-      <CarContainer />
-      <CarContainer />
       <StatusBar style="auto" />
     </View>
   );

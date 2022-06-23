@@ -1,5 +1,6 @@
 import React from "react";
-import { View, StyleSheet, ImageBackground, Text } from "react-native";
+import { View, ImageBackground, Text } from "react-native";
+import Buttons from "./Buttons";
 import styles from "./Style";
 
 const CarContainer = () => {
@@ -12,6 +13,20 @@ const CarContainer = () => {
       <View style={styles.titles}>
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subtitle}>Starting at 69,420$</Text>
+        <Buttons
+          type="primary"
+          title={"Custom Order"}
+          onPress={() => {
+            console.warn("Custom Order was pressed");
+          }}
+        />
+        <Buttons
+          type="secondary"
+          title={"Existing Inventory"}
+          onPress={() => {
+            console.warn("Existing Inventory was pressed");
+          }}
+        />
       </View>
     </View>
   );
