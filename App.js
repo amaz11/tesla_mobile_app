@@ -1,14 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
+const image = { uri: "https://reactjs.org/logo-og.png" };
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.carContainer}>
+        <ImageBackground
+          source={require("./assets/images/Model3.jpeg")}
+          style={styles.image}
+        />
         <View style={styles.titles}>
           <Text style={styles.title}>Model S</Text>
           <Text style={styles.subtitle}>Starting at 69,420$</Text>
-          <Text>Hi</Text>
         </View>
       </View>
       <StatusBar style="auto" />
@@ -39,5 +43,11 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 16,
     color: "#99918F",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    resizeMode: "cover",
   },
 });
