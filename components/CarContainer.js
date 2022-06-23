@@ -3,7 +3,7 @@ import { View, ImageBackground, Text } from "react-native";
 import Buttons from "./Buttons";
 import styles from "./Style";
 
-const CarContainer = () => {
+const CarContainer = ({ name, tagline, taglineCTA, image }) => {
   return (
     <View style={styles.carContainer}>
       <ImageBackground
@@ -13,6 +13,8 @@ const CarContainer = () => {
       <View style={styles.titles}>
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subtitle}>Starting at 69,420$</Text>
+      </View>
+      <View style={styles.buttonContainer}>
         <Buttons
           type="primary"
           title={"Custom Order"}
