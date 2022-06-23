@@ -1,12 +1,13 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, FlatList } from "react-native";
 import CarContainer from "./CarContainer";
 import styles from "./Style";
+import cars from "./cars";
 
 const CarList = () => {
   return (
     <View style={styles.listContainer}>
-      <CarContainer />
+      <FlatList data={cars} renderItem={(car) => <CarContainer car={car} />} />
     </View>
   );
 };
